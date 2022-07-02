@@ -1,0 +1,1135 @@
+/* Left & Right alignment */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+/* Global properties ======================================================== */
+.glob {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: darkslategrey;
+    background: url(../images/homepage-banner.png) 50% 25% no-repeat;
+    line-height: 18px;
+    min-width: 1020px;
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* Global Structure ============================================================= */
+.main {
+    margin: 0px auto 0 auto;
+    width: 1010px;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+}
+
+.page_spinner {
+    position: absolute;
+    background: url(../images/loader.gif) 50% 50% no-repeat #f5f3f2;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+#glob {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+/* ============================= main layout ====================== */
+a {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+    a:hover {
+        text-decoration: underline
+    }
+
+h1 {
+    float: left;
+    padding: 0 0 0 0px;
+    background: url(../images/logoHolder.png) 0 0 no-repeat;
+    width: 417px;
+    height: 310px;
+    position: relative;
+    left: -58px;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    color: #363839;
+    font-size: 20px;
+    line-height: 20px;
+    width: 100%;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    color: #5cbed7;
+    font-size: 13px;
+    line-height: 20px;
+    width: 100%;
+    padding-bottom: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    padding-bottom: 18px;
+    font-size: 12px;
+    color: #848484;
+    line-height: 20px;
+}
+
+.undLineOff {
+    text-decoration: none;
+}
+
+.textLowerCase {
+    text-transform: lowercase
+}
+
+.center {
+    padding: 0 0;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding-top: 136px;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.alignRight {
+    text-align: right;
+}
+/* ============================= header ====================== */
+header {
+    position: relative;
+    width: 1010px;
+    height: 261px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#logo {
+    text-indent: -9999px;
+    background: url(../images/logo.png) 0 0 no-repeat;
+    width: 361px;
+    height: 176px;
+    display: inline-flex;
+    position: absolute;
+    left: 78px;
+    top: 55px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain
+}
+
+#logoHolder {
+    margin: 0 140px;
+    position: relative;
+    width: 674px;
+    height: 172px;
+}
+
+.centerHolder {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    margin: 0 auto;
+    height: 110px;
+}
+
+.logoHolder {
+    position: absolute;
+    width: 702px;
+    top: -850px;
+    height: 226px;
+    left: 0px;
+}
+
+.menu {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    float: left;
+}
+
+#menu {
+    z-index: 3;
+    position: relative;
+    width: 1010px;
+    white-space: nowrap;
+}
+
+    #menu > li {
+        position: relative;
+        width: 201px;
+        height: 201px;
+        display: inline-block;
+        background: url(../images/divider1.png) 100% 0 repeat-y;
+        float: left;
+    }
+
+        #menu > li > a {
+            color: #fff;
+            display: block;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+            #menu > li > a:hover {
+                text-decoration: none;
+            }
+
+        #menu > li.active > a {
+            text-decoration: none;
+        }
+
+    #menu > .bgNone {
+        background: none;
+        padding-right: 0px;
+    }
+
+    #menu .leftP {
+        background: url(../images/leftP.png) 0 0 no-repeat;
+    }
+
+    #menu .rightP {
+        background: url(../images/rightP.png) 0 0 no-repeat;
+    }
+
+.submenu_1 {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    top: 85px;
+    display: inline-block;
+    background: #343738;
+    border-radius: 5px;
+}
+
+    .submenu_1 li {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 100%;
+        height: 32px;
+    }
+
+    .submenu_1 a {
+        font-size: 11px;
+        color: #fff;
+        display: inline-block;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 32px;
+        width: 100%;
+    }
+
+    .submenu_1 li:hover > a, .submenu_1 li.sfHover > a {
+        text-decoration: none;
+        background: #5bb6c9;
+        color: #fff;
+    }
+
+    .submenu_1 .magTop {
+        margin-top: 24px;
+    }
+
+    .submenu_1 .magBot {
+        margin-bottom: 24px;
+    }
+
+.submenu_2 {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: 202px;
+    top: -24px;
+    display: inline-block;
+    background: #343738;
+    border-radius: 5px;
+}
+
+    .submenu_2 li {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 100%;
+        height: 32px;
+    }
+
+    .submenu_2 a {
+        font-size: 11px;
+        color: #fff;
+        display: inline-block;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 32px;
+        width: 100%;
+    }
+
+    .submenu_2 li:hover > a, .submenu_1 li.sfHover > a {
+        text-decoration: none;
+        background: #5bb6c9;
+        color: #fff;
+    }
+
+    .submenu_2 .magTop {
+        margin-top: 24px;
+    }
+
+    .submenu_2 .magBot {
+        margin-bottom: 24px;
+    }
+
+.mText {
+    font-family: 'Lora', serif;
+    color: #fff;
+    z-index: 2;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    top: 32px;
+}
+
+.mOver {
+    width: 100%;
+    height: 75px;
+    background: url(../images/extra1.png) 50% 0 no-repeat;
+    display: block;
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+}
+
+.imgHolder {
+    width: 200px;
+    height: 201px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    background: #FEFEFE;
+    overflow: hidden;
+}
+
+    .imgHolder .picOver {
+        position: relative;
+        width: 201px;
+        height: 202px;
+    }
+
+    .imgHolder .picOut {
+        position: relative;
+        top: 0px;
+        width: 201px;
+        height: 202px;
+    }
+
+.extraHolder {
+    background: url(../images/extra1.png) 49% 0 no-repeat;
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    display: inline-block;
+    top: 190px;
+    z-index: 1;
+}
+
+.corner {
+    background: url(../images/extra10.png) 0 0 no-repeat;
+    position: absolute;
+    top: 15px;
+    left: -24px;
+    display: inline-block;
+    width: 25px;
+    height: 19px;
+}
+
+.imgHolder img {
+    margin-top: 60px;
+}
+
+.menuHolder2 {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    background: url(../images/extra2.png) 0 0 no-repeat;
+    left: 1700px;
+}
+
+.menu2 {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    height: 80px;
+    background: url(../images/divider2.png) 0 100% repeat-x;
+}
+
+#menu2 {
+    z-index: 3;
+    position: relative;
+    width: 1010px;
+    height: 80px;
+}
+
+    #menu2 > li {
+        position: relative;
+        width: 248px;
+        height: 80px;
+        display: inline-block;
+        background: url(../images/divider1.png) 100% 0 repeat-y;
+        float: left;
+        padding: 0 2px 0 1px;
+    }
+
+        #menu2 > li > a {
+            color: #fff;
+            display: block;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+        }
+
+            #menu2 > li > a:hover {
+                text-decoration: none;
+            }
+
+        #menu2 > li.active > a {
+            text-decoration: none;
+        }
+
+    #menu2 .noBg {
+        background: none;
+    }
+
+    #menu2 .magLeft {
+        margin-left: 3px;
+    }
+
+.iconHolder {
+    text-align: center;
+    position: relative;
+    width: 198px;
+    height: 80px;
+    display: inline-block;
+}
+
+    .iconHolder > img {
+        margin-top: 16px;
+    }
+
+.planeHolder {
+    background: #343738;
+    width: 248px;
+    height: 80px;
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    left: 0;
+}
+
+.menuText {
+    font-family: 'Lora', serif;
+    color: #fff;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    z-index: 2;
+    left: 0;
+}
+/* ============================= content ====================== */
+#content {
+    position: relative;
+    height: 662px;
+    z-index: 1;
+    float: left;
+    width: 100%;
+    margin-top: 150px;
+}
+
+    #content > ul {
+        width: 100%;
+        height: 581px;
+        z-index: 1;
+    }
+
+        #content > ul > li {
+            width: 100%;
+            display: block;
+            position: absolute;
+            height: 662px;
+        }
+
+.box {
+    height: 581px;
+    width: 1010px;
+    margin: 0 auto;
+    background: url(../images/contentBg.png) 0 0 no-repeat;
+}
+
+.menuPlane {
+    background: url(../images/partLine.png) repeat-x;
+    width: 100%;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.menuHolder {
+    width: 940px;
+    height: 42px;
+    margin: 0 auto;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.space1 {
+    display: inline-block;
+    width: 80px;
+}
+
+.arrow {
+    background: url(../images/extra3.png) 0 50% no-repeat;
+    width: 10px;
+    height: 18px;
+    display: inline-block;
+    padding-right: 6px;
+}
+
+.color1 {
+    color: #fff;
+}
+
+.color2 {
+    color: #7ac2d0;
+}
+
+.padRight1 {
+    padding-right: 50px;
+}
+
+.padRight2 {
+    padding-right: 18px;
+}
+
+.padRight3 {
+    padding-right: 48px;
+}
+
+.padRight4 {
+    padding-right: 50px;
+}
+
+.magLeft1 {
+    margin-left: 38px;
+}
+
+.magLeft2 {
+    margin-left: 34px;
+}
+
+.magLeft3 {
+    margin-left: 37px;
+}
+
+.magLeft4 {
+    margin-left: 35px;
+}
+
+.padBot1 {
+    padding-bottom: 37px;
+}
+
+.padBot2 {
+    padding-bottom: 42px;
+}
+
+.padBot3 {
+    padding-bottom: 7px;
+}
+
+.padBot4 {
+    padding-bottom: 25px;
+}
+
+.padBot5 {
+    padding-bottom: 46px;
+}
+
+.padBot6 {
+    padding-bottom: 18px;
+}
+
+.padBot7 {
+    padding-bottom: 42px;
+}
+
+.padBot8 {
+    padding-bottom: 6px;
+}
+
+.padBot9 {
+    padding-bottom: 23px;
+}
+
+.padBot10 {
+    padding-bottom: 6px;
+}
+
+.padBot11 {
+    padding-bottom: 0px;
+}
+
+.padBot12 {
+    padding-bottom: 8px;
+}
+
+.padBot13 {
+    padding-bottom: 23px;
+}
+
+.magBot1 {
+    margin-bottom: 30px;
+}
+
+.magBot2 {
+    margin-bottom: 22px;
+}
+
+.bordR {
+    background: url(../images/divider1.png) 100% 0 repeat-y;
+}
+
+.followHolder {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+    .followHolder span {
+        position: relative;
+        display: inline-block;
+        font-family: Arial;
+        font-size: 11px;
+        line-height: 20px;
+        margin: 0 7px;
+    }
+
+    .followHolder > ul {
+        display: inline-block;
+    }
+
+        .followHolder > ul > li {
+            display: inline-block;
+            float: left;
+        }
+
+            .followHolder > ul > li > a {
+                text-transform: uppercase;
+                font-size: 11px;
+                line-height: 20px;
+            }
+
+._link1 {
+    color: #b72635;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 10px;
+}
+
+    ._link1:hover {
+        color: #493649;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+._link2 {
+    color: #5cbed7;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+    ._link2:hover {
+        color: #5cbed7;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+.more {
+    color: #fff;
+    font-size: 11px;
+    background: url(../images/moreSprite.png) 0 0 no-repeat;
+    padding: 9px 18px;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+    .more:hover {
+        text-decoration: none;
+    }
+
+#jcarousel_1 > ul {
+}
+
+    #jcarousel_1 > ul > li {
+        width: 300px;
+        height: 430px;
+        position: relative;
+        float: left;
+        margin-right: 23px;
+    }
+
+.btnHolder {
+    position: absolute;
+    top: -8px;
+    right: 0px;
+    width: 73px;
+    z-index: 2;
+}
+
+.scrButn {
+    position: relative;
+    margin-right: 0px;
+}
+
+._fig1 {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+    ._fig1 img {
+        position: relative;
+        float: left;
+        margin-right: 18px;
+    }
+
+    ._fig1 figcaption {
+        position: relative;
+        float: left;
+        width: 140px;
+    }
+
+    ._fig1 h3 {
+        padding-bottom: 8px;
+    }
+
+    ._fig1 p {
+        padding-top: 0px;
+    }
+
+._fig2 {
+    width: 300px;
+    height: 192px;
+    position: relative;
+    display: inline-block;
+    background: #eaeaea;
+}
+
+    ._fig2 img {
+        position: relative;
+        float: left;
+        margin-right: 1px;
+        padding: 10px;
+    }
+
+    ._fig2 figcaption {
+        position: relative;
+        float: left;
+        width: 125px;
+        margin-top: 12px;
+    }
+
+    ._fig2 h3 {
+        padding-bottom: 15px;
+    }
+
+    ._fig2 > figcaption > p {
+        padding-bottom: 0px;
+        line-height: 22px;
+    }
+
+._fig3 {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 28px;
+}
+
+    ._fig3 img {
+        position: relative;
+        float: left;
+        margin-right: 18px;
+    }
+
+    ._fig3 figcaption {
+        position: relative;
+        float: left;
+        width: 370px;
+    }
+
+    ._fig3 h3 {
+        padding-bottom: 4px;
+    }
+
+    ._fig3 > figcaption > p {
+        padding-bottom: 25px;
+        line-height: 22px;
+    }
+
+._fig4 {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 28px;
+}
+
+.headerExtra {
+    background: url(../images/headerExtra.png) 0 8px;
+    width: 100%;
+    height: 261px;
+    position: absolute;
+    top: 0;
+}
+
+.footerExtra {
+    background: url(../images/footerExtra.png) 0 0px;
+    width: 100%;
+    height: 261px;
+    position: absolute;
+    bottom: 0;
+}
+
+.rightHolder {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 60px;
+    width: 300px;
+    margin-right: 35px;
+}
+
+.text1 {
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    float: right;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-align: right;
+    font-style: italic;
+}
+
+.text2 {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #423133;
+    position: relative;
+    float: left;
+    line-height: 18px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+/* ============================= splash ====================== */
+.splashHolder {
+    position: relative;
+    z-index: 2;
+    width: 1010px;
+    float: left;
+    height: 202px;
+    top: 110px;
+}
+
+.navHolder {
+    position: relative;
+    height: 14px;
+    margin-top: 14px;
+}
+/****************************************************************/
+.sliderHolder {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+#_slider {
+    width: 270px;
+    height: 425px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+    #_slider > .descr {
+        width: 270px;
+        height: 405px;
+        display: block;
+    }
+
+.sliderNav {
+    width: 73px;
+    background: #fff;
+    height: 32px;
+    position: absolute;
+    top: -60px;
+    right: 0;
+}
+
+#prev1 {
+    float: left;
+}
+
+#next1 {
+    float: right;
+}
+
+#form1 {
+    position: relative;
+    float: right;
+    width: 100%;
+    display: inline-block;
+    margin-top: 58px;
+    box-shadow: 0px 0px 100px #19889C;
+}
+
+.inp1 {
+    background: url(../images/extra4.png) 0 0 no-repeat;
+    width: 219px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+    .inp1 input {
+        width: 200px;
+        margin: 7px 10px;
+        color: #848484;
+    }
+
+.searchButton {
+    position: relative;
+    float: left;
+    display: inline-block;
+}
+
+    .searchButton a {
+        position: relative;
+        float: left;
+        display: inline-block;
+    }
+
+.srchText {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 32px;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+/* ============================= footer ====================== */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    height: 68px;
+}
+
+.topBtn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.mainFooter {
+    width: 100%;
+    background-color: darkslategrey;
+    z-index: 2;
+    margin: 0 auto;
+    height: 68px;
+}
+
+.textPrivacy {
+    font-size: 11px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    font-family: Arial;
+    line-height: 20px;
+    bottom: 0;
+}
+
+.privHold {
+    font-size: 10px;
+    color: #ededed;
+    text-transform: uppercase;
+    position: absolute;
+}
+/*=======================Map=====================================*/
+.google_map {
+    margin: 0;
+    width: 270px;
+    height: 300px;
+    background: #fff;
+}
+/* ============================= forms ============================= */
+#ContactForm {
+    padding: 0;
+}
+
+    #ContactForm .bg {
+        padding: 0;
+    }
+
+    #ContactForm .wrapper {
+        overflow: inherit;
+        min-height: 40px;
+    }
+
+    #ContactForm .success {
+        padding-bottom: 1px;
+        text-transform: uppercase;
+        font-size: 12px;
+        position: relative;
+        float: left;
+        color: #7D7D7D;
+        width: 100%;
+    }
+
+    #ContactForm label {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 7px;
+    }
+
+    #ContactForm .message {
+        padding-bottom: 26px;
+    }
+
+    #ContactForm span {
+        display: block
+    }
+
+    #ContactForm .error, #ContactForm .empty {
+        font-size: 9px;
+        color: #7D7D7D;
+        line-height: 9px;
+        display: none;
+        width: 100%;
+        top: 0px;
+        position: relative;
+        text-transform: uppercase;
+        padding-top: 2px;
+    }
+
+    #ContactForm a {
+        position: relative;
+        z-index: 1;
+    }
+
+        #ContactForm a:hover {
+            text-decoration: none;
+        }
+
+    #ContactForm .input {
+        width: 270px;
+        padding: 11px 16px 11px 16px;
+        color: #7D7D7D;
+        outline: none;
+        margin: 0;
+        font-size: 12px;
+        font-family: Arial;
+        border: 1px solid #e0e0e0;
+        box-shadow: none;
+    }
+
+    #ContactForm textarea {
+        overflow: auto;
+        margin: 0;
+        width: 560px;
+        height: 188px;
+        padding: 11px 16px;
+        color: #7D7D7D;
+        resize: none;
+        outline: none;
+        font-size: 12px;
+        font-family: Arial;
+        border: 1px solid #e0e0e0;
+    }
+
+    #ContactForm .block {
+        display: inline-block;
+        position: relative;
+    }
+
+.formBtn {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+}
+/* ============================= end forms ============================= */
